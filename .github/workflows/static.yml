@@ -1,0 +1,215 @@
+
+          # Upload entire rep<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prévention sur les IA</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#2b4eff,#6a7dff);
+      color:white;
+      text-align:center;
+      padding:60px 20px;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.2rem;
+    }
+
+    nav{
+      background:#1f36b3;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    section{
+      max-width:1000px;
+      margin:auto;
+      padding:50px 20px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      margin-bottom:25px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    h2{
+      color:#2b4eff;
+      margin-bottom:15px;
+    }
+
+    ul{
+      margin-left:20px;
+    }
+
+    .quiz button{
+      background:#2b4eff;
+      color:white;
+      border:none;
+      padding:12px 18px;
+      border-radius:10px;
+      margin:10px 5px;
+      cursor:pointer;
+      font-size:1rem;
+    }
+
+    .quiz button:hover{
+      background:#1f36b3;
+    }
+
+    #result{
+      margin-top:15px;
+      font-weight:bold;
+      font-size:1.1rem;
+    }
+
+    footer{
+      background:#1f36b3;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+
+    .danger{
+      color:#d62828;
+      font-weight:bold;
+    }
+
+    .safe{
+      color:#2a9d8f;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Prévention sur les IA</h1>
+  <p>Comprendre les risques et utiliser l’intelligence artificielle intelligemment</p>
+</header>
+
+<nav>
+  <a href="#ia">IA</a>
+  <a href="#risques">Risques</a>
+  <a href="#conseils">Conseils</a>
+  <a href="#quiz">Quiz</a>
+</nav>
+
+<section id="ia">
+  <div class="card">
+    <h2>Qu’est-ce qu’une IA ?</h2>
+    <p>
+      Une intelligence artificielle est un programme capable d’analyser des données,
+      répondre à des questions, créer du texte, des images ou même des vidéos.
+    </p>
+  </div>
+</section>
+
+<section id="risques">
+  <div class="card">
+    <h2>Les dangers possibles</h2>
+
+    <ul>
+      <li class="danger">Fausses informations</li>
+      <li class="danger">Deepfakes et vidéos truquées</li>
+      <li class="danger">Vol de données personnelles</li>
+      <li class="danger">Cyberharcèlement</li>
+      <li class="danger">Dépendance numérique</li>
+    </ul>
+  </div>
+</section>
+
+<section id="conseils">
+  <div class="card">
+    <h2>Conseils de prévention</h2>
+
+    <ul>
+      <li class="safe">Vérifie toujours les informations.</li>
+      <li class="safe">Ne partage jamais tes mots de passe.</li>
+      <li class="safe">Protège tes données personnelles.</li>
+      <li class="safe">Demande l’avis d’un adulte si besoin.</li>
+      <li class="safe">Utilise l’IA comme une aide et non un remplacement.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="card quiz">
+    <h2>Mini Quiz</h2>
+
+    <p><strong>Une IA peut-elle se tromper ?</strong></p>
+
+    <button onclick="bonneReponse()">Oui</button>
+    <button onclick="mauvaiseReponse()">Non</button>
+
+    <p id="result"></p>
+  </div>
+</section>
+
+<footer>
+  Site éducatif sur la prévention des intelligences artificielles
+</footer>
+
+<script>
+
+function bonneReponse(){
+  const result = document.getElementById("result");
+
+  result.innerHTML =
+  "✅ Bonne réponse ! Les IA peuvent parfois donner de fausses informations.";
+
+  result.style.color = "green";
+}
+
+function mauvaiseReponse(){
+  const result = document.getElementById("result");
+
+  result.innerHTML =
+  "❌ Incorrect. Une IA peut se tromper.";
+
+  result.style.color = "red";
+}
+
+</script>
+
+</body>
+</html>
